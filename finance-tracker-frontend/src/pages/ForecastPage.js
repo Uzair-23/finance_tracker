@@ -4,7 +4,8 @@ import { TrendingUp, Brain, AlertTriangle, Lightbulb } from 'lucide-react';
 import { useExpenses } from '../context/ExpenseContext';
 import { useAuth } from '../context/AuthContext';
 import { formatCurrency } from '../utils/formatters';
-import LoadingSpinner from '../common/LoadingSpinner';
+import LoadingSpinner from "../components/common/LoadingSpinner";
+
 
 const ForecastPage = () => {
   const [forecast, setForecast] = useState(null);

@@ -1,27 +1,14 @@
 // src/utils/formatters.js
-export const formatCurrency = (amount, currency = 'USD') => {
+export const formatCurrency = (amount, currency = "USD") => {
   const currencySymbols = {
-    USD: '
-    ,
-    EUR: '€',
-    GBP: '£',
-    INR: '₹',
-    JPY: '¥',
-    CAD: 'C
-    ,
-    AUD: 'A
-    ,
+    USD: "$",
+    EUR: "€",
+    GBP: "£",
   };
 
-  const symbol = currencySymbols[currency] || '
-    ;
-  
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: currency,
-    minimumFractionDigits: 2,
-  }).format(amount).replace(/[A-Z]{3}/, symbol);
+  return `${currencySymbols[currency] || ""}${Number(amount).toFixed(2)}`;
 };
+
 
 export const formatDate = (date, format = 'short') => {
   const options = {
