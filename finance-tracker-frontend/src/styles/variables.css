@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #FF5722; /* Deep Orange */
+    --background-color: #F5F5F5; /* Light Gray */
+    --text-color: #212121; /* Dark Gray */
+    --border-radius: 4px; /* Border radius for components */
+    --font-family: 'Arial', sans-serif; /* Default font family */
+    --font-size: 16px; /* Default font size */
+    --header-height: 60px; /* Height for header */
+    --sidebar-width: 250px; /* Width for sidebar */
+}
