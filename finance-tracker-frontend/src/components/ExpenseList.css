@@ -1,9 +1,0 @@
-.exp{padding:18px; position:relative; overflow:hidden}
-.exp .header{display:flex; justify-content:space-between; margin-bottom:.6rem}
-.exp .title{font-weight:700}
-.list{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px}
-.list li{display:flex; gap:10px; align-items:center; padding:6px 8px; background:rgba(255,255,255,.03); border-radius:10px}
-.list li span:first-child{
-  width:42px; text-align:right; font-weight:800; color:#e9f5ff
-}
-.dog{position:absolute; right:8px; bottom:2px; opacity:.9}

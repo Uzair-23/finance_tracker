@@ -1,7 +1,0 @@
-.progress-card{padding:18px}
-.bar{
-  height:12px; background:#0e1426; border-radius:10px; overflow:hidden;
-  border:1px solid rgba(255,255,255,.06);
-  margin:.6rem 0 .4rem 0;
-}
-.fill{height:100%; background:var(--accent); box-shadow:0 0 12px rgba(139,92,246,.55) inset}
