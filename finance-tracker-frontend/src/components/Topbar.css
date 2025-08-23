@@ -1,0 +1,10 @@
+.topbar{
+  display:flex; justify-content:space-between; align-items:center;
+}
+.tabs{display:flex; gap:10px}
+.profile{
+  display:flex; gap:12px; align-items:center; padding:8px 12px; border-radius:14px;
+  background:var(--panel-2); border:1px solid rgba(255,255,255,.06)
+}
+.profile img{width:42px;height:42px;border-radius:50%; object-fit:cover}
+.name{font-weight:700}

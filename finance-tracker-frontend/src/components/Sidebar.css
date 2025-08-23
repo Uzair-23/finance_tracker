@@ -1,0 +1,33 @@
+.sidebar{
+  width: 210px;
+  padding: 22px 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background: linear-gradient(180deg, #11172a 0%, #0e1426 100%);
+  border-right:1px solid rgba(255,255,255,.06);
+}
+.brand{display:flex; align-items:center; gap:12px;}
+.logo{
+  width:42px;height:62px;border-radius:12px;
+  background:linear-gradient(180deg,#374151,#111827);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;letter-spacing:1px;
+}
+.brand-name{color:var(--muted); font-weight:700; line-height:1.1}
+
+.months{
+  display:flex; flex-direction:column; gap:8px; margin: 14px 0;
+}
+.month{
+  background:transparent;border:0; color:var(--muted);
+  padding:.45rem .6rem; text-align:left; border-radius:10px; cursor:pointer;
+}
+.month.active, .month:hover{ background: rgba(255,255,255,.06); color:var(--text);}
+
+.home{
+  display:flex; gap:10px; align-items:center;
+  padding:.65rem .8rem; border-radius:10px; background:rgba(255,255,255,.05);
+  color:var(--text); font-weight:600;
+}
+.footer-illustration{display:flex; justify-content:center; margin-top:12px; opacity:.8}

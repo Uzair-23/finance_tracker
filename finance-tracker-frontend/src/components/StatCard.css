@@ -1,0 +1,9 @@
+.stat{padding:18px; display:flex; justify-content:space-between; align-items:flex-start; min-height:110px}
+.stat .stat-title{color:var(--muted); margin-bottom:6px}
+.stat .stat-value{font-size:26px; font-weight:800}
+.stat .stat-sub{margin-top:6px}
+.stat.gradient{
+  background: linear-gradient(135deg, #ff5d6c 0%, #ff996a 50%, #ffb673 100%);
+  color:#121212;
+}
+.stat.gradient .stat-title, .stat.gradient .stat-sub{color:#1d1d1d}
