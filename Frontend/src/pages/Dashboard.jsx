@@ -43,7 +43,7 @@ const Dashboard = () => {
               <div className="stat-value">₹{netWorth.toFixed(2)}</div>
             </div>
             <div className="card goal">
-              <div className="stat-title">Income Goal</div>
+              <div className="stat-title">Savings Goal</div>
               <input
                 className="goal-input"
                 type="number"
