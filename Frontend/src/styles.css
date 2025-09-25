@@ -58,3 +58,6 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui
 .btn.sm{padding:6px 8px;font-size:12px}
 
 .empty{display:grid;place-items:center;min-height:300px;text-align:center;border:1px dashed var(--border);border-radius:14px;background:var(--panel)}
+
+
+
