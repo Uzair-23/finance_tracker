@@ -11,12 +11,10 @@ const Sidebar = () => {
     <aside className="sidebar">
       <div className="brand">₹ Tracker</div>
       <nav className="nav">
-        <Link className={isActive('/')} to="/">Dashboard</Link>
+        <Link className={isActive('/home')} to="/home">Home</Link>
+        <Link className={isActive('/dashboard')} to="/dashboard">Dashboard</Link>
         <Link className={isActive('/add')} to="/add">Add Transaction</Link>
         <Link className={isActive('/assets')} to="/assets">Assets</Link>
-        <Link className={isActive('/account')} to="/account">My Account</Link>
-        <Link className={isActive('/login')} to="/login">Login</Link>
-        <Link className={isActive('/signup')} to="/signup">Signup</Link>
       </nav>
 
       <div className="sidebar-footer">

@@ -58,6 +58,15 @@ export const DataProvider = ({ children }) => {
   const balance = income - expenses;
   const netWorth = useMemo(() => assets.reduce((s,a)=>s + Number(a.amount||0), 0), [assets]);
 
+  // Previous month metrics for trends
+  const prevMonth = useMemo(() => (month === 1 ? 12 : month - 1), [month]);
+  const prevTx = useMemo(() => transactions.filter(t => t.month === prevMonth), [transactions, prevMonth]);
+  const prevIncome = useMemo(() => prevTx.filter(t => t.type === 'income').reduce((s,t)=>s + Number(t.amount||0), 0), [prevTx]);
+  const prevExpenses = useMemo(() => prevTx.filter(t => t.type === 'expense').reduce((s,t)=>s + Number(t.amount||0), 0), [prevTx]);
+  const prevBalance = prevIncome - prevExpenses;
+  const savingsRate = income > 0 ? (balance / income) * 100 : 0;
+  const prevSavingsRate = prevIncome > 0 ? (prevBalance / prevIncome) * 100 : 0;
+
   const incomeBreakdown = useMemo(() => {
     const map = {};
     filteredTx.filter(t => t.type === 'income').forEach(t => {
@@ -82,6 +91,8 @@ export const DataProvider = ({ children }) => {
         assets, addAsset, removeAsset,
         goal, setGoal,
         income, expenses, balance, netWorth,
+        prevIncome, prevExpenses, prevBalance,
+        savingsRate, prevSavingsRate,
         incomeBreakdown, expenseByCategory,
         filteredTx, clearAll
       }}
